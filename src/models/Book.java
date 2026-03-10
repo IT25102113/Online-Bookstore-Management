@@ -1,28 +1,24 @@
 package models;
 
 public abstract class Book {
-    private String bookId;
-    private String title;
-    private String author;
-    private double price;
+    protected String bookId;
+    protected String title;
+    protected String author;
+    protected double price;
+    protected String imageUrl; // අලුතින් එක් කළා
 
-    public Book(String bookId, String title, String author, double price) {
+    public Book(String bookId, String title, String author, double price, String imageUrl) {
         this.bookId = bookId;
         this.title = title;
         this.author = author;
         this.price = price;
+        this.imageUrl = imageUrl;
     }
 
-    // Getters and Setters
-    public String getBookId() { return bookId; }
-    public String getTitle() { return title; }
-    public String getAuthor() { return author; }
-    public double getPrice() { return price; }
-
-    // Abstract method
     public abstract String getBookType();
 
     public String toFileString() {
-        return bookId + "," + title + "," + author + "," + price + "," + getBookType();
+        // Image URL එක අන්තිමට එකතු කළා
+        return bookId + "," + title + "," + author + "," + price + "," + getBookType() + "," + imageUrl;
     }
 }
