@@ -1,0 +1,9 @@
+target/
+.idea/
+*.iml
+src/data/*.txt
+generate_git_history.sh
+git_scripts/
+Viva_Guides/
+Member_Work_Division.html
+BookLeaf_Class_Diagram.html
