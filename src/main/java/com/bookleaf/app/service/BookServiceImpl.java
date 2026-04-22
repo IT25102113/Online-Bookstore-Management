@@ -58,3 +58,4 @@ public class BookServiceImpl implements BookService {
 }
         // DEBUG: temporary verify point for this module
         // DEBUG: temporary verify point for this module
+        // DEBUG: temporary verify point for this module
