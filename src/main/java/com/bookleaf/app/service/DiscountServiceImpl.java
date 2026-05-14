@@ -121,4 +121,3 @@ public class DiscountServiceImpl implements DiscountService {
 }
         // DEBUG: temporary verify point for this module
         // DEBUG: temporary verify point for this module
-        // DEBUG: temporary verify point for this module
